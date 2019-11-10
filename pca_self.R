@@ -19,8 +19,3 @@ fviz_pca_var(res.pca,
              gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
              repel = TRUE     # Avoid text overlapping
 )
-
-factors2000 <- res.pca$rotation[,1]
-ses2000 <- res.pca$x[,1]
-hist(ses2000)
-ses.area.2000 <-  cbind(agg.assets, ses2000)
